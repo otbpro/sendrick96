@@ -95,4 +95,10 @@
         .whatsapp-float {
             animation: float 3s ease-in-out infinite;
         }
+        
+        img {
+    max-width: 100%;
+    height: auto;          /* keeps aspect ratio */
+    display: block;        /* removes unwanted bottom space in some cases */
+}
     
