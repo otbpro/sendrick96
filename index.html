@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sendrick Norbert - Freelance AI & Digital Innovator based in Kampala, Uganda. Web &amp; Mobile Development, AI Solutions, Digital Marketing &amp; More.">
+    <title>Sendrick Norbert | AI-Powered Digital Transformation for Uganda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Satoshi:wght@700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="tail-container bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-black/90 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html#home" class="flex items-center gap-x-3">
+                <div class="w-10 h-10 rounded-2xl flex items-center justify-center shadow-lg shadow-red-500/30 overflow-hidden">
+                    <img src="logo.jpeg" alt="Sendrick Norbert Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="text-2xl font-black heading-font tracking-tighter">Sendrick Norbert</span>
+                </div>
+            </a>
+
+            <!-- Menu -->
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#home" onclick="navigateTo('home')" class="nav-link cursor-pointer">Home</a>
+                <a href="#about" onclick="navigateTo('about')" class="nav-link cursor-pointer">About</a>
+                <a href="#services" onclick="navigateTo('services')" class="nav-link cursor-pointer">Services</a>
+                <a href="#portfolio" onclick="navigateTo('portfolio')" class="nav-link cursor-pointer">Portfolio</a>
+                <a href="#insights" onclick="navigateTo('insights')" class="nav-link cursor-pointer">Insights</a>
+                <a href="#contact" onclick="navigateTo('contact')" class="nav-link cursor-pointer">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <!-- Dark Mode Toggle -->
+                <button onclick="toggleDarkMode()" id="dark-toggle"
+                        class="w-10 h-10 flex items-center justify-center rounded-2xl bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition-colors">
+                    <i class="fa-solid fa-moon text-xl dark:hidden"></i>
+                    <i class="fa-solid fa-sun text-xl hidden dark:block"></i>
+                </button>
+
+                <!-- Language -->
+                <button onclick="showLanguageModal()" 
+                        class="px-5 py-2.5 text-sm font-medium border border-black/20 dark:border-white/20 rounded-3xl hover:bg-white/10 flex items-center gap-x-2">
+                    <span>🇬🇧 EN</span>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+
+                <!-- CTA -->
+                <a href="consultation.html"
+                   class="hidden md:flex items-center gap-x-2 bg-[#FF0000] hover:bg-black text-white font-semibold px-8 py-3.5 rounded-3xl transition-all shadow-lg shadow-red-500/40">
+                    <span>Get Free Consultation</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <!-- Mobile Menu -->
+                <button onclick="toggleMobileMenu()" class="md:hidden w-11 h-11 flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-black border-t border-white/10 py-6">
+            <div class="flex flex-col px-6 gap-y-6 text-lg font-medium">
+                <a href="#home" onclick="navigateTo('home');toggleMobileMenu()" class="py-2">Home</a>
+                <a href="#about" onclick="navigateTo('about');toggleMobileMenu()" class="py-2">About</a>
+                <a href="#services" onclick="navigateTo('services');toggleMobileMenu()" class="py-2">Services</a>
+                <a href="#portfolio" onclick="navigateTo('portfolio');toggleMobileMenu()" class="py-2">Portfolio</a>
+                <a href="#insights" onclick="navigateTo('insights');toggleMobileMenu()" class="py-2">Insights</a>
+                <a href="#contact" onclick="navigateTo('contact');toggleMobileMenu()" class="py-2">Contact</a>
+                <a href="https://wa.me/256786811370" target="_blank"
+                   class="bg-[#FF0000] text-white font-semibold py-4 text-center rounded-3xl flex items-center justify-center gap-x-3">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative neural-bg overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 pt-32 pb-24 relative z-10">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-x-2 bg-black/70 dark:bg-black/70 backdrop-blur-md text-white text-sm font-medium px-6 py-3 rounded-3xl mb-8 border border-white/30">
+                    <div class="w-2 h-2 bg-[#FF0000] rounded-full animate-pulse"></div>
+                    Kampala, Uganda • AI & Digital Specialist
+                </div>
+                
+                <h1 class="heading-font text-6xl md:text-7xl font-black leading-none tracking-tighter text-white">
+                    AI-Powered Digital<br>Transformation for<br><span class="text-[#FF0000]">Ugandan Businesses</span>
+                </h1>
+                
+                <p class="mt-8 text-xl text-white/90 max-w-lg">
+                    Web Development • Mobile Apps • AI Solutions • Digital Growth • Full Communications Management
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-12">
+                    <a href="consultation.html"
+                       class="bg-[#FF0000] hover:bg-black text-white font-semibold text-lg px-10 py-6 rounded-3xl flex items-center gap-x-4 group transition-all">
+                        Start Your AI Journey
+                        <span class="group-hover:rotate-45 transition-transform inline-block">→</span>
+                    </a>
+                    
+                    <a href="#portfolio" onclick="navigateTo('portfolio')"
+                       class="border-2 border-white/80 hover:border-white text-white font-semibold text-lg px-10 py-6 rounded-3xl flex items-center gap-x-4 transition-all">
+                        View My Work
+                    </a>
+                </div>
+
+                <!-- Trust bar -->
+                <div class="mt-16 flex flex-wrap items-center gap-x-10 gap-y-6 text-white/70 text-sm">
+                    <div class="flex items-center gap-x-3">
+                        <i class="fa-solid fa-check text-[#FF0000]"></i>
+                        <span>Trusted by 60+ Ugandan &amp; East African businesses</span>
+                    </div>
+                    <div class="h-px w-8 bg-white/30"></div>
+                    <div>4.98/5 from 87 reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center gap-y-2 text-white/60 text-xs">
+            <div class="w-px h-12 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
+            <span class="tracking-[3px]">SCROLL</span>
+        </div>
+
+        <!-- Floating WhatsApp -->
+        <a href="https://wa.me/256786811370" target="_blank"
+           class="whatsapp-float fixed bottom-8 right-8 z-40 bg-[#FF0000] text-white w-16 h-16 rounded-3xl flex items-center justify-center shadow-2xl shadow-red-600/50 text-4xl hover:scale-110 transition-transform">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Back to top -->
+        <button id="back-to-top"
+                onclick="navigateTo('home')"
+                class="hidden fixed bottom-8 right-28 z-40 w-11 h-11 rounded-full bg-black/80 text-white text-sm flex items-center justify-center shadow-lg hover:bg-black">
+            ↑
+        </button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-28 bg-white dark:bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="uppercase tracking-widest text-[#FF0000] font-medium text-sm mb-4">Since 2023 • Kampala</div>
+                    <h2 class="heading-font text-5xl md:text-6xl font-bold leading-none tracking-tighter">
+                        Bridging the Digital Divide with AI &amp; Cutting-Edge Tech
+                    </h2>
+                    <div class="mt-10 prose dark:prose-invert text-lg max-w-lg">
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Based in Kampala, I’m on a mission to bring world-class AI and technology solutions to Ugandan businesses and beyond. 
+                            I turn visionary ideas into high-performance digital realities that drive real growth.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-5xl font-bold text-[#FF0000]">60+</div>
+                            <div class="text-sm mt-2 text-gray-500 dark:text-gray-400">Projects Delivered</div>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold text-[#FF0000]">87</div>
+                            <div class="text-sm mt-2 text-gray-500 dark:text-gray-400">Happy Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold text-[#FF0000]">4.98</div>
+                            <div class="text-sm mt-2 text-gray-500 dark:text-gray-400">Average Rating</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="106-800x620.jpg" alt="Sendrick Norbert in Kampala Office" 
+                         class="rounded-3xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-black p-6 rounded-3xl shadow-xl border border-[#FF0000]/30">
+                        <div class="flex items-center gap-x-4">
+                            <img src="64-80x80.jpg" alt="Sendrick Norbert" class="w-12 h-12 rounded-2xl object-cover">
+                            <div>
+                                <div class="font-semibold">Sendrick Norbert</div>
+                                <div class="text-xs text-[#FF0000]">CEO &amp; Digital Consultant</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-28 bg-gray-50 dark:bg-black/70">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline px-6 py-3 bg-white dark:bg-white/10 rounded-3xl text-sm font-medium text-[#FF0000]">MY EXPERTISE</div>
+                <h2 class="heading-font text-5xl font-bold mt-6 tracking-tighter">End-to-End Digital Solutions</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">AI &amp; Machine Learning</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Chatbots, predictive analytics, automation, custom AI models tailored for African businesses.</p>
+                    <a href="ai-machine-learning.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">Web Development</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Blazing-fast, SEO-optimized websites &amp; e-commerce platforms that convert.</p>
+                    <a href="web-development.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">Mobile Apps</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Native &amp; cross-platform iOS/Android apps that users love.</p>
+                    <a href="mobile-apps.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">Graphic &amp; Motion Design</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Premium branding, logos, motion graphics &amp; full visual identities.</p>
+                    <a href="graphic-motion-design.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">Digital Marketing</h3>
+                    <p class="text-gray-600 dark:text-gray-400">SEO, social media, paid ads, content strategies that drive revenue.</p>
+                    <a href="digital-marketing.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">Full Communications</h3>
+                    <p class="text-gray-600 dark:text-gray-400">PR, crisis management, social content &amp; complete comms packages.</p>
+                    <a href="full-communications.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">Cybersecurity &amp; Cloud</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Enterprise-grade protection and scalable cloud infrastructure.</p>
+                    <a href="cybersecurity-cloud.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card bg-white dark:bg-black p-8 rounded-3xl border border-transparent hover:border-[#FF0000]/30 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-black rounded-2xl flex items-center justify-center mb-8 text-white text-3xl">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-4">IT Consulting</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Strategic digital transformation roadmaps for sustainable growth.</p>
+                    <a href="it-consulting.html" class="mt-10 inline-flex text-[#FF0000] font-medium items-center gap-x-2 group-hover:gap-x-3 transition-all">
+                        Learn more <span class="text-xl">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="py-24 bg-white dark:bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-5xl font-bold tracking-tighter">Why Ugandan Businesses Choose Sendrick Norbert</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="bg-gradient-to-br from-black to-black text-white p-10 rounded-3xl">
+                    <div class="text-7xl mb-6">🇺🇬</div>
+                    <div class="font-semibold text-2xl">Local Expertise</div>
+                    <div class="mt-4 text-white/70">Deep understanding of Ugandan market + global standards</div>
+                </div>
+                <div class="col-span-2 bg-white dark:bg-black p-10 rounded-3xl border border-[#FF0000]/20">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="font-semibold text-2xl">One-Stop Shop</div>
+                            <div class="mt-6 space-y-6 text-gray-600 dark:text-gray-400">
+                                <div class="flex gap-x-4">
+                                    <i class="fa-solid fa-check text-[#FF0000] mt-1"></i>
+                                    <div>Robust development of fast, secure apps and sites, plus targeted growth tactics like SEO, ads, and conversions to boost traffic and revenue.</div><br>
+                                    <i class="fa-solid fa-check text-[#FF0000] mt-1"></i>
+                                    <div>Reliable ongoing support—maintenance, updates, security monitoring, and optimization—so your digital assets stay strong, evolve seamlessly, and free you to focus on what you do best.</div><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-black p-10 rounded-3xl">
+                    <div class="text-[#FF0000] text-6xl font-black">70%</div>
+                    <div class="mt-4 text-lg">Average reduction in manual work after AI implementation</div>
+                </div>
+                <div class="bg-white dark:bg-black p-10 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="uppercase text-xs tracking-widest">Affordable Premium</div>
+                        <div class="text-4xl font-bold mt-3 leading-none">World-class tech at African prices</div>
+                    </div>
+                    <div class="text-[#FF0000] text-6xl mt-auto">★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-28 bg-gray-50 dark:bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <div class="text-[#FF0000] uppercase text-sm font-medium">Featured Work</div>
+                    <h2 class="heading-font text-5xl font-bold tracking-tighter">Real Results. Real Ugandan Impact.</h2>
+                </div>
+                
+                <!-- Filters -->
+                <div class="flex gap-x-2 mt-8 md:mt-0 flex-wrap">
+                    <button onclick="filterPortfolio('all')" class="portfolio-filter-btn active px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">All</button>
+                    <button onclick="filterPortfolio('web')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Web</button>
+                    <button onclick="filterPortfolio('ai')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">AI</button>
+                    <button onclick="filterPortfolio('design')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Design</button>
+                </div>
+            </div>
+
+            <div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- INSIGHTS -->
+    <section id="insights" class="py-28 bg-white dark:bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="heading-font text-5xl font-bold tracking-tighter">Insights from the Frontier</h2>
+                <a href="blog.html" class="hidden md:flex items-center gap-x-3 text-[#FF0000] font-medium">
+                    Visit Blog <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="h-64 bg-gray-200 dark:bg-black rounded-3xl overflow-hidden">
+                        <img src="AI-agric.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="mt-6">
+                        <div class="text-xs uppercase text-[#FF0000]">AI in Agriculture • Feb 2026</div>
+                        <h3 class="font-semibold text-2xl mt-3 leading-tight">How AI is Helping Ugandan Farmers Predict Harvests with 92% Accuracy</h3>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="h-64 bg-gray-200 dark:bg-black rounded-3xl overflow-hidden">
+                        <img src="app.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="mt-6">
+                        <div class="text-xs uppercase text-[#FF0000]">Digital Growth • Jan 2026</div>
+                        <h3 class="font-semibold text-2xl mt-3 leading-tight">Why Every Kampala SME Needs a Mobile App in 2026</h3>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="h-64 bg-gray-200 dark:bg-black rounded-3xl overflow-hidden">
+                        <img src="mara-ad.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="mt-6">
+                        <div class="text-xs uppercase text-[#FF0000]">Success Story</div>
+                        <h3 class="font-semibold text-2xl mt-3 leading-tight">Mara Safari Lodge: +340% Bookings After New Website &amp; AI Chatbot</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-28 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="text-6xl">“</div>
+                <h2 class="heading-font text-5xl font-bold mt-4">What My Clients Say</h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div id="testimonial-slider" class="relative">
+                    <!-- JS populated -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-32 bg-black text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+            <div class="text-[#FF0000] text-2xl font-medium mb-6">Ready to lead the future?</div>
+            <h2 class="heading-font text-6xl font-black tracking-tighter">Transform your business with AI today</h2>
+            <p class="mt-8 text-xl text-white/80 max-w-md mx-auto">Book a free 30-minute strategy call with me</p>
+            
+            <a href="consultation.html" onclick="navigateTo('consultation')"
+               class="mt-12 inline-flex items-center justify-center bg-white text-black font-semibold text-2xl px-16 py-8 rounded-3xl hover:scale-105 transition-all shadow-2xl">
+                Book Free Strategy Call
+            </a>
+            
+            <div class="mt-10 text-sm text-white/50">Or call <a href="tel:+256786811370" class="underline">+256 786 811 370</a> • WhatsApp available 24/7</div>
+        </div>
+    </section>
+
+    <!-- CONTACT + FOOTER -->
+    <footer id="contact" class="bg-white dark:bg-black pt-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20">
+            <!-- Form -->
+            <div>
+                <h2 class="heading-font text-5xl font-bold tracking-tighter">Let's build something extraordinary together</h2>
+                <form id="contact-form" onsubmit="handleSubmit(event)" class="mt-12 space-y-8">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="text" id="name" placeholder="Your name" required
+                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg">
+                        <input type="email" id="email" placeholder="Business email" required
+                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg">
+                    </div>
+                    <input type="tel" id="phone" placeholder="Phone / WhatsApp" value="+256 "
+                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full">
+                    <textarea id="message" rows="5" placeholder="Tell me about your project..." required
+                              class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full resize-none"></textarea>
+                    
+                    <button type="submit"
+                            class="w-full bg-[#FF0000] hover:bg-black text-white py-7 rounded-3xl font-semibold text-xl transition-all">
+                        Send Message → 
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Info -->
+            <div class="space-y-12">
+                <div>
+                    <div class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">Visit us</div>
+                    <div class="mt-4 text-2xl">Kampala, Uganda</div>
+                    <a href="https://maps.google.com/?q=Kampala+Uganda" target="_blank" 
+                       class="text-[#FF0000] hover:underline mt-2 inline-block">Get directions →</a>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-y-12">
+                    <div>
+                        <div class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">Call or WhatsApp</div>
+                        <a href="tel:+256786811370" class="block mt-3 text-3xl font-medium hover:text-[#FF0000] transition-colors">+256 786 811 370</a>
+                    </div>
+                    <div>
+                        <div class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">Email</div>
+                        <a href="mailto:olwenysendrick@gmail.com" class="block mt-3 text-3xl font-medium hover:text-[#FF0000] transition-colors">info@sendrick.com</a>
+                    </div>
+                </div>
+                
+                <!-- Socials -->
+                <div>
+                    <div class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-6">Follow my journey</div>
+                    <div class="flex gap-x-8 text-3xl">
+                        <a href="https://instagram.com/s3ndrick96" target="_blank" class="hover:text-[#FF0000] transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@otbproug" target="_blank" class="hover:text-[#FF0000] transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@S3ndrick96" target="_blank" class="hover:text-[#FF0000] transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/sendrick-norbert-0b1355238" target="_blank" class="hover:text-[#FF0000] transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="rounded-3xl overflow-hidden border border-gray-200 dark:border-white/10 shadow-inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159302." 
+                            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Footer -->
+        <div class="mt-32 border-t border-gray-200 dark:border-white/10 py-12">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-y-6 text-sm">
+                <div class="flex gap-x-8">
+                    <a href="privacy.html" class="hover:text-[#FF0000]">Privacy</a>
+                    <a href="terms.html" class="hover:text-[#FF0000]">Terms</a>
+                    <a href="sitemap.html" class="hover:text-[#FF0000]">Sitemap</a>
+                </div>
+                <div class="text-center md:text-right">
+                    © 2026 Sendrick Norbert. All rights reserved.<br>
+                    <span class="text-gray-400">Kampala, Uganda • East Africa • Africa</span>
+                </div>
+                <div class="flex items-center gap-x-6 text-xs">
+                    <div class="px-4 py-2 bg-gray-100 dark:bg-white/10 rounded-2xl">Sendrick Norbert</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PORTFOLIO MODAL -->
+    <div id="portfolio-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]">
+        <div class="modal bg-white dark:bg-black max-w-2xl w-full mx-4 rounded-3xl overflow-hidden">
+            <div class="relative">
+                <button onclick="closeModal()" 
+                        class="absolute top-6 right-6 text-3xl text-white bg-black/40 hover:bg-black/70 w-10 h-10 rounded-full flex items-center justify-center z-10">×</button>
+                <img id="modal-image" src="" class="w-full h-80 object-cover">
+            </div>
+            <div class="p-10">
+                <div id="modal-title" class="text-3xl font-bold"></div>
+                <div id="modal-category" class="text-[#FF0000] text-sm mt-2"></div>
+                <div id="modal-desc" class="mt-8 text-gray-600 dark:text-gray-300 leading-relaxed"></div>
+                
+                <div class="grid grid-cols-3 gap-6 mt-12">
+                    <div>
+                        <div class="text-xs text-gray-500">Result</div>
+                        <div id="modal-result1" class="font-semibold text-2xl text-[#FF0000]"></div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500">Result</div>
+                        <div id="modal-result2" class="font-semibold text-2xl text-[#FF0000]"></div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500">Delivered in</div>
+                        <div id="modal-time" class="font-semibold text-2xl">6 weeks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tailwind script already loaded via CDN
+        
+        function initTailwind() {
+            // Already configured via CDN
+        }
+        
+        // Dark mode
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        }
+        
+        // Load saved dark mode
+        if (localStorage.getItem('darkMode') === 'true' || 
+            (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+        
+        // Navbar scroll effect + back-to-top visibility
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            const backToTop = document.getElementById('back-to-top');
+            if (window.scrollY > 80) {
+                nav.classList.add('shadow-xl');
+                if (backToTop) backToTop.classList.remove('hidden');
+            } else {
+                nav.classList.remove('shadow-xl');
+                if (backToTop) backToTop.classList.add('hidden');
+            }
+        });
+        
+        // Mobile menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Simple language alert
+        function showLanguageModal() {
+            alert("🌍 Luganda & Swahili versions coming Q2 2026!\n\nWe are committed to making technology accessible in local languages.");
+        }
+        
+        // Portfolio data
+        const portfolioItems = [
+            {
+                id: 1,
+                category: "web",
+                title: "Mara Safari Lodge",
+                image: "mara.jpg",
+                desc: "Complete branding overhaul + booking website with AI chatbot. Increased direct bookings by 340% in first quarter.",
+                result1: "+340% Leads",
+                result2: "6 weeks",
+                type: "Website + Branding"
+            },
+            {
+                id: 2,
+                category: "ai",
+                title: "AgriPredict Dashboard",
+                image: "180-800x600.jpg",
+                desc: "Custom AI platform helping 200+ Ugandan farmers predict yields and optimize inputs.",
+                result1: "92% Accuracy",
+                result2: "70% less waste",
+                type: "AI Solution"
+            },
+            {
+                id: 3,
+                category: "design",
+                title: "Crystal Sya Kids",
+                image: "kids.jpg",
+                desc: "Full visual identity, motion graphics &amp; packaging for leading Ugandan children’s brand.",
+                result1: "National rollout",
+                result2: "Instant recognition",
+                type: "Branding"
+            },
+            {
+                id: 4,
+                category: "web",
+                title: "Kampala E-Commerce Hub",
+                image: "ecom.jpg",
+                desc: "High-converting Shopify store for premium Ugandan coffee exporter.",
+                result1: "4.2× Revenue",
+                result2: "Mobile-first",
+                type: "E-commerce"
+            },
+            {
+                id: 5,
+                category: "web",
+                title: "Native Kampala",
+                image: "native.jpg",
+                desc: "Ongoing web maintenance and performance optimization for Native Kampala clothing brand at nativekampala.com.",
+                result1: "99.9% Uptime",
+                result2: "Faster load times",
+                type: "Web Maintenance"
+            },
+            {
+                id: 6,
+                category: "web",
+                title: "Crypto Payment Integration",
+                image: "crypto.jpg",
+                desc: "Secure online payment integration adding crypto options alongside cards and mobile money for a regional e-commerce client.",
+                result1: "+45% Checkout Options",
+                result2: "Seamless crypto",
+                type: "Payment Integration"
+            }
+        ];
+        
+        function renderPortfolio(filteredItems = portfolioItems) {
+            const container = document.getElementById('portfolio-grid');
+            container.innerHTML = '';
+            
+            filteredItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = `group cursor-pointer bg-white dark:bg-black rounded-3xl overflow-hidden border border-transparent hover:border-[#FF0000]/40`;
+                card.innerHTML = `
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="${item.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-5 right-5 bg-white/90 dark:bg-black/70 text-xs font-medium px-5 py-2 rounded-3xl">
+                            ${item.type}
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="font-semibold text-2xl">${item.title}</div>
+                        <div class="text-sm text-[#FF0000] mt-1">${item.category.toUpperCase()}</div>
+                        <div class="text-gray-600 dark:text-gray-400 line-clamp-3 mt-5 text-[15px]">${item.desc}</div>
+                    </div>
+                `;
+                card.onclick = () => showPortfolioModal(item);
+                container.appendChild(card);
+            });
+        }
+        
+        function filterPortfolio(category) {
+            document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if ((category === 'all' && btn.textContent === 'All') || 
+                    (category === 'web' && btn.textContent === 'Web') ||
+                    (category === 'ai' && btn.textContent === 'AI') ||
+                    (category === 'design' && btn.textContent === 'Design')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            if (category === 'all') {
+                renderPortfolio(portfolioItems);
+            } else {
+                const filtered = portfolioItems.filter(item => item.category === category);
+                renderPortfolio(filtered);
+            }
+        }
+        
+        let currentModalItem = null;
+        
+        function showPortfolioModal(item) {
+            currentModalItem = item;
+            document.getElementById('portfolio-modal').classList.remove('hidden');
+            document.getElementById('modal-image').src = item.image;
+            document.getElementById('modal-title').textContent = item.title;
+            document.getElementById('modal-category').textContent = item.type;
+            document.getElementById('modal-desc').innerHTML = item.desc;
+            document.getElementById('modal-result1').innerHTML = item.result1;
+            document.getElementById('modal-result2').innerHTML = item.result2;
+        }
+        
+        function closeModal() {
+            document.getElementById('portfolio-modal').classList.add('hidden');
+        }
+        
+        // Testimonial data
+        const testimonials = [
+            {
+                quote: "Sendrick Norbert built our entire digital presence in just 5 weeks. The AI chatbot alone saves us 40 hours every month. They truly understand the Ugandan market.",
+                name: "Amina K.",
+                role: "Founder, Crystal Sya Kids"
+            },
+            {
+                quote: "The AI automation dashboard they delivered reduced our manual inventory work by 70%. Best investment we made in 2025.",
+                name: "Robert M.",
+                role: "CEO, FreshHarvest Uganda"
+            }
+        ];
+        
+        let currentTestimonial = 0;
+        
+        function renderTestimonials() {
+            const container = document.getElementById('testimonial-slider');
+            container.innerHTML = `
+                <div class="bg-white dark:bg-black p-12 rounded-3xl">
+                    <div class="italic text-2xl leading-relaxed">"${testimonials[currentTestimonial].quote}"</div>
+                    <div class="mt-12 flex items-center gap-x-4">
+                        <div class="w-12 h-12 bg-gray-300 dark:bg-gray-700 rounded-2xl"></div>
+                        <div>
+                            <div class="font-semibold">${testimonials[currentTestimonial].name}</div>
+                            <div class="text-sm text-gray-500">${testimonials[currentTestimonial].role}</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center gap-x-4 mt-10">
+                    <button onclick="prevTestimonial()" class="w-12 h-12 border border-gray-300 dark:border-white/30 rounded-2xl flex items-center justify-center hover:bg-white/10">←</button>
+                    <button onclick="nextTestimonial()" class="w-12 h-12 border border-gray-300 dark:border-white/30 rounded-2xl flex items-center justify-center hover:bg-white/10">→</button>
+                </div>
+            `;
+        }
+        
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            renderTestimonials();
+        }
+        
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            renderTestimonials();
+        }
+        
+        // Form submit simulation
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = `Sending <span class="animate-pulse">...</span>`;
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                alert("✅ Thank you! Your message has been received.\n\nI will contact you within 2 hours via WhatsApp.");
+                e.target.reset();
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }, 1800);
+        }
+        
+        // Navigation helper
+        function navigateTo(section) {
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+        }
+        
+        // Keyboard escape for modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") {
+                const modal = document.getElementById('portfolio-modal');
+                if (!modal.classList.contains('hidden')) closeModal();
+            }
+        });
+        
+        // Initialize everything
+        window.onload = function() {
+            initTailwind();
+            renderPortfolio();
+            renderTestimonials();
+            
+            // Auto-rotate testimonials every 8s
+            setInterval(() => {
+                nextTestimonial();
+            }, 8000);
+            
+            // Make navbar transparent to solid
+            window.dispatchEvent(new Event('scroll'));
+            
+            console.log('%cSendrick Norbert Portfolio Ready 🚀\nPersonal website showcasing services and projects.', 'color:#FF0000; font-family:monospace');
+        };
+    </script>
+</body>
+</html>

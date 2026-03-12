@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a free consultation with Sendrick Norbert to plan your next AI-powered digital project.">
+    <title>Get Free Consultation | Sendrick Norbert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Satoshi:wght@700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tail-container bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+
+    <!-- NAVBAR (simplified, links back to home) -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-black/90 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html#home" class="flex items-center gap-x-3">
+                <div class="w-10 h-10 rounded-2xl flex items-center justify-center shadow-lg shadow-red-500/30 overflow-hidden">
+                    <img src="logo.jpeg" alt="Sendrick Norbert Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="text-2xl font-black heading-font tracking-tighter">Sendrick Norbert</span>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-x-4">
+                <a href="index.html#home" class="hidden md:inline text-sm font-medium nav-link">Home</a>
+                <a href="index.html#services" class="hidden md:inline text-sm font-medium nav-link">Services</a>
+                <a href="index.html#contact" class="hidden md:inline text-sm font-medium nav-link">Contact</a>
+                <a href="index.html"
+                   class="px-5 py-2.5 text-sm font-semibold rounded-3xl border border-black/20 dark:border-white/20 hover:bg-white/10">
+                    Back to Main Site
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONSULTATION HERO + FORM -->
+    <main class="min-h-screen flex items-center bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-black pt-32 pb-24">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+            <div>
+                <div class="inline-flex items-center gap-x-2 bg-black text-white text-xs font-medium px-4 py-2 rounded-2xl mb-4">
+                    <span class="w-2 h-2 rounded-full bg-[#FF0000]"></span>
+                    Free 30-minute strategy call
+                </div>
+                <h1 class="heading-font text-4xl md:text-5xl font-black tracking-tighter mb-6">
+                    Get your free<br><span class="text-[#FF0000]">digital growth consultation</span>
+                </h1>
+                <p class="text-gray-600 dark:text-gray-300 text-lg mb-6">
+                    Tell me about your business goals and I'll map out how AI, web, and mobile solutions can drive real revenue for you.
+                </p>
+                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                    <li class="flex gap-x-3">
+                        <i class="fa-solid fa-check text-[#FF0000] mt-1"></i>
+                        <span>Personalized roadmap for your business in Uganda & East Africa</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <i class="fa-solid fa-check text-[#FF0000] mt-1"></i>
+                        <span>No obligation, no pressure — just expert guidance</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <i class="fa-solid fa-check text-[#FF0000] mt-1"></i>
+                        <span>Get a clear budget and timeline estimate</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white dark:bg-black/80 border border-gray-200 dark:border-white/10 rounded-3xl p-8 shadow-xl">
+                <h2 class="text-2xl font-semibold mb-2 heading-font">Book your free consultation</h2>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
+                    Fill in the form and I will reach out within 2 hours via WhatsApp or email.
+                </p>
+                <form id="consultation-form" class="space-y-5" onsubmit="handleConsultationSubmit(event)">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" name="name" placeholder="Your full name" required
+                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm">
+                        <input type="email" name="email" placeholder="Business email" required
+                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone / WhatsApp (e.g. +256...)" required
+                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
+                    <input type="text" name="company" placeholder="Company / Organization (optional)"
+                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
+                    <select name="interest" class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full" required>
+                        <option value="" disabled selected>Select main area of interest</option>
+                        <option value="ai">AI & Automation</option>
+                        <option value="web">Website / Web App</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="branding">Branding & Design</option>
+                        <option value="other">Other / Not sure yet</option>
+                    </select>
+                    <textarea name="message" rows="4" placeholder="Tell us briefly about your goals or challenges..."
+                              class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full resize-none" required></textarea>
+
+                    <button type="submit"
+                            class="w-full bg-[#FF0000] hover:bg-black text-white py-4 rounded-2xl font-semibold text-sm tracking-wide transition-all">
+                        Request Free Consultation →
+                    </button>
+
+                    <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-3">
+                        By submitting, you agree to be contacted by Sendrick Norbert via WhatsApp, phone, or email. I respect your privacy.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simple footer -->
+    <footer class="border-t border-gray-200 dark:border-white/10 py-8">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-600 dark:text-gray-400">
+            <div>© 2026 Sendrick Norbert • Kampala, Uganda</div>
+            <div class="flex gap-4">
+                <a href="index.html#contact" class="hover:text-[#FF0000]">Contact</a>
+                <a href="https://wa.me/256786811370" target="_blank" class="hover:text-[#FF0000]">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleConsultationSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const original = btn.innerHTML;
+            btn.innerHTML = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert("✅ Thank you! Your free consultation request has been received.\n\nI will contact you within 2 hours.");
+                e.target.reset();
+                btn.innerHTML = original;
+                btn.disabled = false;
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
