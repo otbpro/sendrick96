@@ -36,13 +36,14 @@
                 <a href="#contact" onclick="navigateTo('contact')" class="nav-link cursor-pointer">Contact</a>
             </div>
 
-            <div class="flex items-center gap-x-4">
-                <!-- Dark Mode Toggle -->
-                <button onclick="toggleDarkMode()" id="dark-toggle"
-                        class="w-10 h-10 flex items-center justify-center rounded-2xl bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition-colors">
-                    <i class="fa-solid fa-moon text-xl dark:hidden"></i>
-                    <i class="fa-solid fa-sun text-xl hidden dark:block"></i>
-                </button>
+           <div class="flex items-center gap-x-4">
+    <!-- Dark Mode Toggle -->
+    <button onclick="toggleDarkMode()" id="dark-toggle"
+            class="w-10 h-10 flex items-center justify-center rounded-2xl bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition-colors">
+        <i class="fa-solid fa-moon text-xl hidden dark:block"></i>
+        <i class="fa-solid fa-sun text-xl block dark:hidden"></i>
+    </button>
+</div>
 
                 <!-- Language -->
                 <button onclick="showLanguageModal()" 
