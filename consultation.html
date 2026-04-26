@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Book a free consultation with Sendrick Norbert to plan your next AI-powered digital project.">
+    <meta property="og:title" content="Get Free Consultation | Sendrick Norbert">
+    <meta property="og:description" content="Book a free 30-min strategy call with Sendrick Norbert. Get a personalized AI &amp; digital roadmap for your Ugandan business. No obligation.">
+    <meta property="og:image" content="https://otbpro.github.io/sendrick96/1015-2000x1200.jpg">
+    <meta property="og:url" content="https://otbpro.github.io/sendrick96/consultation.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Get Free Consultation | Sendrick Norbert">
+    <meta name="twitter:description" content="Book a free 30-min strategy call with Sendrick Norbert. Personalized AI &amp; digital roadmap for your Ugandan business.">
+    <meta name="twitter:image" content="https://otbpro.github.io/sendrick96/1015-2000x1200.jpg">
     <title>Get Free Consultation | Sendrick Norbert</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <link rel="canonical" href="https://otbpro.github.io/sendrick96/consultation.html">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Satoshi:wght@700;900&amp;display=swap" rel="stylesheet">
@@ -71,31 +82,64 @@
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
                     Fill in the form and I will reach out within 2 hours via WhatsApp or email.
                 </p>
-                <form id="consultation-form" class="space-y-5" onsubmit="handleConsultationSubmit(event)">
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" name="name" placeholder="Your full name" required
-                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm">
-                        <input type="email" name="email" placeholder="Business email" required
-                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm">
+                <!-- Success state — shown by @formspree/ajax after successful submit -->
+                <div data-fs-success style="display:none" class="p-8 text-center">
+                    <div class="w-14 h-14 bg-[#FF0000]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-check text-[#FF0000] text-2xl"></i>
                     </div>
-                    <input type="tel" name="phone" placeholder="Phone / WhatsApp (e.g. +256...)" required
-                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
-                    <input type="text" name="company" placeholder="Company / Organization (optional)"
-                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
-                    <select name="interest" class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full" required>
-                        <option value="" disabled selected>Select main area of interest</option>
-                        <option value="ai">AI & Automation</option>
-                        <option value="web">Website / Web App</option>
-                        <option value="mobile">Mobile App</option>
-                        <option value="marketing">Digital Marketing</option>
-                        <option value="branding">Branding & Design</option>
-                        <option value="other">Other / Not sure yet</option>
-                    </select>
-                    <textarea name="message" rows="4" placeholder="Tell us briefly about your goals or challenges..."
-                              class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full resize-none" required></textarea>
+                    <p class="font-semibold text-xl mb-2 heading-font">Request received!</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">I'll reach out within 2 hours via WhatsApp or email.</p>
+                    <a href="https://wa.me/256786811370" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-x-2 bg-[#FF0000] hover:bg-black text-white font-semibold px-6 py-3 rounded-2xl transition-all text-sm">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp now
+                    </a>
+                </div>
 
-                    <button type="submit"
-                            class="w-full bg-[#FF0000] hover:bg-black text-white py-4 rounded-2xl font-semibold text-sm tracking-wide transition-all">
+                <!-- Form-level error — shown by @formspree/ajax on network/server errors -->
+                <div data-fs-error style="display:none" class="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-2xl text-sm text-red-600 dark:text-red-300"></div>
+
+                <form id="consultation-form" class="space-y-5">
+                    <input type="hidden" name="_subject" value="New consultation request from sendrick.com">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" name="name" placeholder="Your full name" required data-fs-field
+                                   class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
+                            <span data-fs-error="name" class="text-xs text-red-500 mt-1 block"></span>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Business email" required data-fs-field
+                                   class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
+                            <span data-fs-error="email" class="text-xs text-red-500 mt-1 block"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" placeholder="Phone / WhatsApp (e.g. +256...)" required data-fs-field
+                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
+                        <span data-fs-error="phone" class="text-xs text-red-500 mt-1 block"></span>
+                    </div>
+                    <input type="text" name="company" placeholder="Company / Organization (optional)" data-fs-field
+                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full">
+                    <div>
+                        <select name="interest" data-fs-field
+                                class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full" required>
+                            <option value="" disabled selected>Select main area of interest</option>
+                            <option value="ai">AI &amp; Automation</option>
+                            <option value="web">Website / Web App</option>
+                            <option value="mobile">Mobile App</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="branding">Branding &amp; Design</option>
+                            <option value="other">Other / Not sure yet</option>
+                        </select>
+                        <span data-fs-error="interest" class="text-xs text-red-500 mt-1 block"></span>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="4" placeholder="Tell us briefly about your goals or challenges..."
+                                  class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-3 outline-none text-sm w-full resize-none" required data-fs-field></textarea>
+                        <span data-fs-error="message" class="text-xs text-red-500 mt-1 block"></span>
+                    </div>
+
+                    <button type="submit" data-fs-submit-btn
+                            class="w-full bg-[#FF0000] hover:bg-black disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 rounded-2xl font-semibold text-sm tracking-wide transition-all">
                         Request Free Consultation →
                     </button>
 
@@ -119,20 +163,14 @@
     </footer>
 
     <script>
-        function handleConsultationSubmit(e) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const original = btn.innerHTML;
-            btn.innerHTML = 'Sending...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                alert("✅ Thank you! Your free consultation request has been received.\n\nI will contact you within 2 hours.");
-                e.target.reset();
-                btn.innerHTML = original;
-                btn.disabled = false;
-            }, 1500);
-        }
+        document.documentElement.classList.add('dark');
     </script>
+
+    <!-- Formspree AJAX — consultation form -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#consultation-form', formId: 'xykbwjll' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>

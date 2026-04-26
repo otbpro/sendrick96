@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /thank-you.html
+Disallow: /google472a6ee22a8ad7ed.html
+
+Sitemap: https://otbpro.github.io/sendrick96/sitemap.xml

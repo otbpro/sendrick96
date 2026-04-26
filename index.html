@@ -5,22 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sendrick Norbert">
-    <meta name="description" content="Sendrick Norbert - Freelance AI & Digital Innovator based in Kampala, Uganda. Web &amp; Mobile Development, AI Solutions, Digital Marketing &amp; More.">
-    <meta name="description" content="AI-powered digital transformation expert in Kampala, Uganda. Custom web development, mobile apps, chatbots, SEO, digital marketing & AI solutions for Ugandan businesses. 70% less manual work. 60+ projects, 4.98/5 rating. Free strategy call today.">
+    <meta name="description" content="AI-powered digital transformation expert in Kampala, Uganda. Custom web development, mobile apps, chatbots, SEO, digital marketing &amp; AI solutions for Ugandan businesses. 70% less manual work. 60+ projects, 4.98/5 rating. Free strategy call today.">
     <meta name="keywords" content="ai digital transformation uganda, web development kampala, mobile app development uganda, ai solutions uganda, digital marketing kampala, seo services uganda, ai consultant kampala, web developer uganda, cybersecurity uganda, it consulting kampala">
     <meta property="og:title" content="Sendrick Norbert | AI Digital Transformation for Ugandan Businesses">
     <meta property="og:description" content="Transform your Kampala business with AI, web apps, SEO & digital growth. Trusted by 60+ Ugandan clients. Book free 30-min call.">
     <meta property="og:image" content="https://otbpro.github.io/sendrick96/1015-2000x1200.jpg">
     <meta property="og:url" content="https://otbpro.github.io/sendrick96/">
     <meta property="og:type" content="website">
-    <meta name="google-site-verification" content="google472a6ee22a8ad7ed.html">
+    <meta name="google-site-verification" content="google472a6ee22a8ad7ed">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sendrick Norbert | AI-Powered Digital Transformation for Uganda">
+    <meta name="twitter:description" content="AI-powered digital transformation expert in Kampala, Uganda. Custom web development, mobile apps, chatbots, SEO, digital marketing &amp; AI solutions for Ugandan businesses.">
+    <meta name="twitter:image" content="https://otbpro.github.io/sendrick96/1015-2000x1200.jpg">
     <title>Sendrick Norbert | AI-Powered Digital Transformation for Uganda</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Satoshi:wght@700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="canonical" href="https://otbpro.github.io/sendrick96/">
-
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sendrick Norbert",
+      "url": "https://otbpro.github.io/sendrick96/",
+      "image": "https://otbpro.github.io/sendrick96/64-80x80.jpg",
+      "jobTitle": "AI & Digital Transformation Consultant",
+      "description": "AI-powered digital transformation expert in Kampala, Uganda offering web development, mobile apps, AI solutions, digital marketing and cybersecurity services.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kampala",
+        "addressCountry": "UG"
+      },
+      "telephone": "+256786811370",
+      "email": "olwenysendrick@gmail.com",
+      "sameAs": [
+        "https://instagram.com/s3ndrick96",
+        "https://youtube.com/@otbproug",
+        "https://tiktok.com/@S3ndrick96",
+        "https://www.linkedin.com/in/sendrick-norbert-0b1355238"
+      ],
+      "knowsAbout": ["AI", "Machine Learning", "Web Development", "Mobile Apps", "Digital Marketing", "Cybersecurity", "IT Consulting"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Sendrick Norbert Digital",
+        "url": "https://otbpro.github.io/sendrick96/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kampala",
+          "addressCountry": "UG"
+        }
+      }
+    }
+    </script>
 </head>
 <body class="tail-container bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
 
@@ -55,10 +94,10 @@
                 </button>
 
                 <!-- CTA -->
-                <a href="consultation.html"
+                <a href="https://wa.me/256786811370" target="_blank" rel="noopener"
                    class="hidden md:flex items-center gap-x-2 bg-[#FF0000] hover:bg-black text-white font-semibold px-8 py-3.5 rounded-3xl transition-all shadow-lg shadow-red-500/40">
+                    <i class="fa-brands fa-whatsapp"></i>
                     <span>Get Free Consultation</span>
-                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
                 <!-- Mobile Menu -->
@@ -452,21 +491,50 @@
             <!-- Form -->
             <div>
                 <h2 class="heading-font text-5xl font-bold tracking-tighter">Let's build something extraordinary together</h2>
-                <form id="contact-form" onsubmit="handleSubmit(event)" class="mt-12 space-y-8">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <input type="text" id="name" placeholder="Your name" required
-                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg">
-                        <input type="email" id="email" placeholder="Business email" required
-                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg">
+                <!-- Success state — shown by @formspree/ajax after successful submit -->
+                <div data-fs-success style="display:none" class="mt-12 p-8 bg-white dark:bg-black/60 border border-[#FF0000]/30 rounded-3xl text-center">
+                    <div class="w-14 h-14 bg-[#FF0000]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-check text-[#FF0000] text-2xl"></i>
                     </div>
-                    <input type="tel" id="phone" placeholder="Phone / WhatsApp" value="+256 "
-                           class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full">
-                    <textarea id="message" rows="5" placeholder="Tell me about your project..." required
-                              class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full resize-none"></textarea>
-                    
-                    <button type="submit"
-                            class="w-full bg-[#FF0000] hover:bg-black text-white py-7 rounded-3xl font-semibold text-xl transition-all">
-                        Send Message → 
+                    <p class="font-semibold text-xl mb-2">Message received!</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">I'll reach out within 2 hours via WhatsApp or email.</p>
+                    <a href="https://wa.me/256786811370" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-x-2 bg-[#FF0000] hover:bg-black text-white font-semibold px-6 py-3 rounded-2xl transition-all text-sm">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp now
+                    </a>
+                </div>
+
+                <!-- Form-level error — shown by @formspree/ajax on network/server errors -->
+                <div data-fs-error style="display:none" class="mt-12 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-2xl text-sm text-red-600 dark:text-red-300"></div>
+
+                <form id="contact-form" class="mt-12 space-y-8">
+                    <input type="hidden" name="_subject" value="New contact from sendrick.com">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Your name" required data-fs-field
+                                   class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full">
+                            <span data-fs-error="name" class="text-xs text-red-500 mt-1 block"></span>
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="Business email" required data-fs-field
+                                   class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full">
+                            <span data-fs-error="email" class="text-xs text-red-500 mt-1 block"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone / WhatsApp" value="+256 " data-fs-field
+                               class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full">
+                        <span data-fs-error="phone" class="text-xs text-red-500 mt-1 block"></span>
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required data-fs-field
+                                  class="bg-transparent border-b border-gray-300 dark:border-white/30 focus:border-[#FF0000] py-4 outline-none text-lg w-full resize-none"></textarea>
+                        <span data-fs-error="message" class="text-xs text-red-500 mt-1 block"></span>
+                    </div>
+
+                    <button type="submit" data-fs-submit-btn
+                            class="w-full bg-[#FF0000] hover:bg-black disabled:opacity-60 disabled:cursor-not-allowed text-white py-7 rounded-3xl font-semibold text-xl transition-all">
+                        Send Message →
                     </button>
                 </form>
             </div>
@@ -765,22 +833,7 @@
             renderTestimonials();
         }
         
-        // Form submit simulation
-        function handleSubmit(e) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const originalText = btn.innerHTML;
-            
-            btn.innerHTML = `Sending <span class="animate-pulse">...</span>`;
-            btn.disabled = true;
-            
-            setTimeout(() => {
-                alert("✅ Thank you! Your message has been received.\n\nI will contact you within 2 hours via WhatsApp.");
-                e.target.reset();
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-            }, 1800);
-        }
+        // Form submission handled by @formspree/ajax — see script tags at bottom of body
         
         // Navigation helper
         function navigateTo(section) {
@@ -815,5 +868,12 @@
             console.log('%cSendrick Norbert Portfolio Ready 🚀\nPersonal website showcasing services and projects.', 'color:#FF0000; font-family:monospace');
         };
     </script>
+
+    <!-- Formspree AJAX — contact form -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'xykbwjll' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
