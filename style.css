@@ -17,9 +17,9 @@
 
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('1015-2000x1200.jpg');
-            background-size: cover;
+            background-size: 100% 100%, cover;
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat, no-repeat;
             min-height: 100vh;
             min-height: 100svh;
         }
@@ -100,6 +100,12 @@
 }
 
 @media (max-width: 640px) {
+    .hero-bg {
+        background-size: 100% 100%, auto 120%;
+        background-position: center center, center center;
+        background-repeat: no-repeat, no-repeat;
+    }
+
     html,
     body {
         max-width: 100%;
