@@ -18,13 +18,10 @@
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('1015-2000x1200.jpg');
             background-size: cover;
-            background-position: center;
-            animation: subtleZoom 30s infinite alternate ease-in-out;
-        }
-
-        @keyframes subtleZoom {
-            0% { background-size: 105%; }
-            100% { background-size: 110%; }
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            min-height: 100svh;
         }
 
         .neural-bg::before {
@@ -100,5 +97,46 @@
     max-width: 100%;
     height: auto;          /* keeps aspect ratio */
     display: block;        /* removes unwanted bottom space in some cases */
+}
+
+@media (max-width: 640px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    nav .max-w-7xl {
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+    }
+
+    nav .heading-font {
+        font-size: clamp(1rem, 5vw, 1.25rem);
+    }
+
+    nav button {
+        flex-shrink: 0;
+    }
+
+    .hero-bg h1 {
+        font-size: clamp(2rem, 9vw, 3rem);
+        line-height: 1.05;
+    }
+
+    .hero-bg > .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-bg .inline-flex {
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
 }
     
