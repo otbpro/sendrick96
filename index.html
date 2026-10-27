@@ -392,15 +392,18 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
                 <div>
                     <div class="text-[#FF0000] uppercase text-sm font-medium">Featured Work</div>
-                    <h2 class="heading-font text-5xl font-bold tracking-tighter">Real Results. Real Ugandan Impact.</h2>
+                    <h2 class="heading-font text-5xl font-bold tracking-tighter">Digital Experiences for Real-World Needs.</h2>
+                    <p class="mt-4 max-w-2xl text-gray-600 dark:text-gray-400">From creative prompt studios and community platforms to travel, interiors, and construction, explore digital experiences built for people and businesses in Uganda and beyond.</p>
                 </div>
                 
                 <!-- Filters -->
                 <div class="flex gap-x-2 mt-8 md:mt-0 flex-wrap">
-                    <button onclick="filterPortfolio('all')" class="portfolio-filter-btn active px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">All</button>
-                    <button onclick="filterPortfolio('web')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Web</button>
-                    <button onclick="filterPortfolio('ai')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">AI</button>
-                    <button onclick="filterPortfolio('design')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Design</button>
+                    <button data-portfolio-category="all" onclick="filterPortfolio('all')" class="portfolio-filter-btn active px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">All</button>
+                    <button data-portfolio-category="creative" onclick="filterPortfolio('creative')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Creative Tools</button>
+                    <button data-portfolio-category="community" onclick="filterPortfolio('community')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Community</button>
+                    <button data-portfolio-category="travel" onclick="filterPortfolio('travel')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Travel</button>
+                    <button data-portfolio-category="interiors" onclick="filterPortfolio('interiors')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Interiors</button>
+                    <button data-portfolio-category="construction" onclick="filterPortfolio('construction')" class="portfolio-filter-btn px-8 py-3 rounded-3xl text-sm font-medium border border-gray-300 dark:border-white/20">Construction</button>
                 </div>
             </div>
 
@@ -667,7 +670,7 @@
         const portfolioItems = [
             {
                 id: 1,
-                category: "web",
+                category: "creative",
                 label: "IMAGE",
                 title: "Image Creator Prompts",
                 image: "creator-prompts-home.png",
@@ -678,8 +681,20 @@
                 type: "AI Content Platform"
             },
             {
+                id: 6,
+                category: "creative",
+                label: "VIDEO",
+                title: "Video Studio Prompts",
+                image: "video-studio-prompts-home.png",
+                url: "https://video-studio-prompts.vercel.app/",
+                desc: "A creative studio for video-generation prompts, editing notes, and scene variations. Direct the action, camera, duration, and audio, then create prompts for Veo, Kling, Runway, or Sora—or notes to hand to an editor.",
+                result1: "Video Generation",
+                result2: "Editing & Scenes",
+                type: "AI Video Prompt Studio"
+            },
+            {
                 id: 2,
-                category: "web",
+                category: "community",
                 label: "NONPROFIT",
                 title: "Together For Transformation",
                 image: "donation-org-home.png",
@@ -691,7 +706,7 @@
             },
             {
                 id: 3,
-                category: "web",
+                category: "travel",
                 label: "BUS TRAVEL",
                 title: "Nile Star Buses",
                 image: "nile-star-bus-home.png",
@@ -703,7 +718,7 @@
             },
             {
                 id: 4,
-                category: "web",
+                category: "interiors",
                 label: "INTERIOR DESIGN",
                 title: "Luxe Interiors UG",
                 image: "luxe-interiors-home.png",
@@ -715,7 +730,7 @@
             },
             {
                 id: 5,
-                category: "web",
+                category: "construction",
                 label: "CONSTRUCTION",
                 title: "Urban Living",
                 image: "urban-living-home.png",
@@ -725,18 +740,6 @@
                 result2: "End-to-End Building",
                 type: "Construction Website"
             },
-            {
-                id: 6,
-                category: "web",
-                label: "VIDEO",
-                title: "Video Studio Prompts",
-                image: "video-studio-prompts-home.png",
-                url: "https://video-studio-prompts.vercel.app/",
-                desc: "A creative studio for video-generation prompts, editing notes, and scene variations. Direct the action, camera, duration, and audio, then create prompts for Veo, Kling, Runway, or Sora—or notes to hand to an editor.",
-                result1: "Video Generation",
-                result2: "Editing & Scenes",
-                type: "AI Video Prompt Studio"
-            }
         ];
         
         function renderPortfolio(filteredItems = portfolioItems) {
@@ -772,10 +775,7 @@
         function filterPortfolio(category) {
             document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
                 btn.classList.remove('active');
-                if ((category === 'all' && btn.textContent === 'All') || 
-                    (category === 'web' && btn.textContent === 'Web') ||
-                    (category === 'ai' && btn.textContent === 'AI') ||
-                    (category === 'design' && btn.textContent === 'Design')) {
+                if (btn.dataset.portfolioCategory === category) {
                     btn.classList.add('active');
                 }
             });
