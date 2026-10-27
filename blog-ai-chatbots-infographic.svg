@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">AI chatbots for Kampala SMEs</title>
+  <desc id="description">A customer support dashboard connects a WhatsApp-style chat, an AI assistant, and a human support agent, with an infographic showing repetitive questions handled automatically.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081b2d"/><stop offset="1" stop-color="#0b3940"/></linearGradient>
+    <linearGradient id="screen" x2="0" y2="1"><stop stop-color="#17354a"/><stop offset="1" stop-color="#102638"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#42d6b0"/><stop offset="1" stop-color="#3b9df5"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#020a12" flood-opacity=".42"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="710" cy="50" r="190" fill="#11b99a" opacity=".08"/><circle cx="32" cy="555" r="175" fill="#399ef4" opacity=".1"/>
+  <path d="M0 448c140-50 237 25 369-8s263-101 431-28v188H0Z" fill="#071624" opacity=".42"/>
+  <text x="54" y="68" fill="#66e0c3" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">AI + CUSTOMER CARE</text>
+  <text x="54" y="112" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">Help every customer, faster</text>
+  <text x="54" y="142" fill="#a9c5d0" font-family="Arial,sans-serif" font-size="16">Always-on answers for busy Kampala teams</text>
+  <g filter="url(#shadow)">
+    <rect x="57" y="182" width="300" height="300" rx="26" fill="#f3f8f8"/>
+    <path d="M57 208q0-26 26-26h248q26 0 26 26v43H57Z" fill="#114c48"/>
+    <circle cx="87" cy="216" r="17" fill="#33c899"/><path d="M78 218q9-15 18 0v9H78Z" fill="#eafff8"/>
+    <text x="115" y="214" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">Kampala Shop</text>
+    <text x="115" y="233" fill="#b9e3d6" font-family="Arial,sans-serif" font-size="11">typically replies instantly</text>
+    <rect x="79" y="272" width="209" height="49" rx="16" fill="#e1ebe9"/>
+    <text x="96" y="293" fill="#27443e" font-family="Arial,sans-serif" font-size="13">Do you deliver to Ntinda?</text>
+    <text x="96" y="311" fill="#78928b" font-family="Arial,sans-serif" font-size="10">CUSTOMER · 10:42</text>
+    <rect x="119" y="334" width="213" height="76" rx="16" fill="#d0f4e3"/>
+    <text x="137" y="357" fill="#1e5547" font-family="Arial,sans-serif" font-size="13" font-weight="700">Yes! We deliver across</text>
+    <text x="137" y="376" fill="#1e5547" font-family="Arial,sans-serif" font-size="13">Kampala. Share your location</text>
+    <text x="137" y="395" fill="#1e5547" font-family="Arial,sans-serif" font-size="13">and we'll confirm the fee.</text>
+    <text x="240" y="429" fill="#719087" font-family="Arial,sans-serif" font-size="10">AI ASSISTANT · 10:42</text>
+    <rect x="79" y="447" width="201" height="4" rx="2" fill="#d6e4e0"/>
+  </g>
+  <g>
+    <path d="M357 311h61" stroke="#61ddbd" stroke-width="3" stroke-dasharray="6 7"/>
+    <circle cx="383" cy="311" r="5" fill="#61ddbd"/>
+    <rect x="417" y="218" width="326" height="231" rx="24" fill="url(#screen)" stroke="#31566a" stroke-width="2"/>
+    <text x="446" y="254" fill="#d8eaf0" font-family="Arial,sans-serif" font-size="14" font-weight="700">SUPPORT WORKFLOW</text>
+    <rect x="446" y="276" width="268" height="56" rx="14" fill="#153d48"/>
+    <circle cx="471" cy="304" r="12" fill="#54d6b3"/><path d="M466 304h10m-5-5v10" stroke="#093b36" stroke-width="2"/>
+    <text x="494" y="300" fill="#ecffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">FAQs handled instantly</text>
+    <text x="494" y="318" fill="#95b8c2" font-family="Arial,sans-serif" font-size="11">Prices · delivery · opening hours</text>
+    <rect x="446" y="345" width="268" height="56" rx="14" fill="#193448"/>
+    <circle cx="471" cy="373" r="12" fill="#4aabf2"/><path d="M465 373h12m-6-6 6 6-6 6" fill="none" stroke="#062943" stroke-width="2"/>
+    <text x="494" y="369" fill="#ecffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Complex cases to your team</text>
+    <text x="494" y="387" fill="#95b8c2" font-family="Arial,sans-serif" font-size="11">A person steps in when needed</text>
+    <rect x="446" y="414" width="268" height="18" rx="9" fill="#27485b"/>
+    <rect x="446" y="414" width="174" height="18" rx="9" fill="url(#accent)"/>
+    <text x="446" y="466" fill="#84aeba" font-family="Arial,sans-serif" font-size="11">40–60% OF ROUTINE QUESTIONS AUTOMATED</text>
+  </g>
+  <rect x="54" y="520" width="692" height="1" fill="#537486" opacity=".45"/>
+  <text x="54" y="551" fill="#d7e8ee" font-family="Arial,sans-serif" font-size="14">More time for people. Less time repeating answers.</text>
+  <text x="744" y="551" fill="#64dabb" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700">01 / 06</text>
+</svg>

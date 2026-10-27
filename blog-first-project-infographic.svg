@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Choose your first digital project</title>
+  <desc id="description">A founder evaluates four digital project paths—website, app, AI, and marketing—on a simple impact and effort matrix.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#1b203d"/><stop offset="1" stop-color="#3d3567"/></linearGradient>
+    <linearGradient id="highlight"><stop stop-color="#70d7cf"/><stop offset="1" stop-color="#9f8cff"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0c1027" flood-opacity=".5"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="749" cy="70" r="180" fill="#a591ff" opacity=".1"/>
+  <text x="52" y="68" fill="#98e1dc" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">DIGITAL STRATEGY</text>
+  <text x="52" y="111" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">Start with the right project</text>
+  <text x="52" y="141" fill="#c9c8e3" font-family="Arial,sans-serif" font-size="16">Choose for impact, not hype.</text>
+  <g filter="url(#shadow)">
+    <rect x="54" y="181" width="433" height="310" rx="24" fill="#f9f8ff"/>
+    <text x="82" y="217" fill="#3c3657" font-family="Arial,sans-serif" font-size="15" font-weight="700">IMPACT VS. EFFORT</text>
+    <path d="M112 433V259m0 174h331" stroke="#938da7" stroke-width="2"/>
+    <path d="M111 345h330M277 258v175" stroke="#e1deea" stroke-width="1.5" stroke-dasharray="5 6"/>
+    <text x="116" y="456" fill="#7c778d" font-family="Arial,sans-serif" font-size="10">LOW EFFORT</text>
+    <text x="377" y="456" fill="#7c778d" font-family="Arial,sans-serif" font-size="10">MORE EFFORT</text>
+    <text x="82" y="276" fill="#7c778d" font-family="Arial,sans-serif" font-size="10">HIGH IMPACT</text>
+    <text x="82" y="423" fill="#7c778d" font-family="Arial,sans-serif" font-size="10">LOW</text>
+    <circle cx="203" cy="308" r="27" fill="#4eb8a9"/><text x="203" y="313" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700">AI</text>
+    <circle cx="251" cy="365" r="27" fill="#8574d7"/><text x="251" y="370" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700">APP</text>
+    <circle cx="166" cy="365" r="27" fill="#e7975f"/><text x="166" y="370" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="9" font-weight="700">WEB</text>
+    <circle cx="213" cy="343" r="27" fill="#477fcc"/><text x="213" y="348" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="9" font-weight="700">GROWTH</text>
+    <rect x="312" y="278" width="139" height="63" rx="14" fill="#e9f6f1"/>
+    <text x="327" y="300" fill="#427e70" font-family="Arial,sans-serif" font-size="10" font-weight="700">START HERE</text>
+    <text x="327" y="321" fill="#2c4b46" font-family="Arial,sans-serif" font-size="13" font-weight="700">High impact</text>
+    <text x="327" y="335" fill="#2c4b46" font-family="Arial,sans-serif" font-size="11">Manageable effort</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="527" y="196" width="218" height="279" rx="23" fill="#29294b" stroke="#58577e"/>
+    <circle cx="636" cy="248" r="32" fill="#3c3b64"/>
+    <path d="M636 225v15m0 16v15m-23-23h15m16 0h15" stroke="#a9a0ff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="636" cy="248" r="9" fill="#8a80e5"/>
+    <text x="636" y="307" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">Ask first:</text>
+    <rect x="557" y="326" width="158" height="1" fill="#59587a"/>
+    <circle cx="568" cy="353" r="5" fill="#78dbcf"/>
+    <text x="582" y="357" fill="#e5e3f3" font-family="Arial,sans-serif" font-size="12">What is the real bottleneck?</text>
+    <circle cx="568" cy="386" r="5" fill="#78dbcf"/>
+    <text x="582" y="390" fill="#e5e3f3" font-family="Arial,sans-serif" font-size="12">Which outcome matters most?</text>
+    <circle cx="568" cy="419" r="5" fill="#78dbcf"/>
+    <text x="582" y="423" fill="#e5e3f3" font-family="Arial,sans-serif" font-size="12">What can your team sustain?</text>
+  </g>
+  <rect x="52" y="530" width="693" height="1" fill="#d4d1f0" opacity=".35"/>
+  <text x="52" y="559" fill="#e7e5f4" font-family="Arial,sans-serif" font-size="14">The best first step solves your biggest constraint.</text>
+  <text x="744" y="559" fill="#98e1dc" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700">05 / 06</text>
+</svg>

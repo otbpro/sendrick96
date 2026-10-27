@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Fast Ugandan websites</title>
+  <desc id="description">An illustrated phone displays a quickly loading Kampala business website beside performance indicators for compressed images, caching, and mobile-first delivery.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#131a37"/><stop offset="1" stop-color="#243971"/></linearGradient>
+    <linearGradient id="speed"><stop stop-color="#55e3c2"/><stop offset="1" stop-color="#5aabff"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#080c20" flood-opacity=".55"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 451c154-42 238-18 352-47 136-35 295-16 448-61v257H0Z" fill="#10182d" opacity=".45"/>
+  <circle cx="735" cy="91" r="164" fill="#55e3c2" opacity=".07"/>
+  <text x="52" y="68" fill="#83e6d1" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">WEB PERFORMANCE</text>
+  <text x="52" y="111" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">Fast on any network</text>
+  <text x="52" y="141" fill="#c1cbea" font-family="Arial,sans-serif" font-size="16">Built for customers from Kampala to upcountry</text>
+  <g filter="url(#shadow)">
+    <rect x="74" y="177" width="254" height="326" rx="32" fill="#0b1222" stroke="#53668d" stroke-width="2"/>
+    <rect x="87" y="198" width="228" height="281" rx="20" fill="#f7fafc"/>
+    <rect x="87" y="198" width="228" height="37" rx="20" fill="#122d43"/>
+    <circle cx="106" cy="216" r="6" fill="#58d9ba"/><text x="121" y="220" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">KAMPALA MARKET</text>
+    <rect x="104" y="250" width="194" height="94" rx="12" fill="#d8eee8"/>
+    <path d="M105 325 159 272l33 30 31-23 74 66H105Z" fill="#7ab79f"/>
+    <circle cx="252" cy="271" r="12" fill="#f6c37c"/>
+    <rect x="105" y="357" width="116" height="11" rx="5" fill="#22364a"/>
+    <rect x="105" y="378" width="170" height="7" rx="3" fill="#b6c4cf"/>
+    <rect x="105" y="393" width="144" height="7" rx="3" fill="#b6c4cf"/>
+    <rect x="105" y="416" width="91" height="31" rx="15" fill="#e84f50"/>
+    <text x="150" y="436" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700">SHOP NOW</text>
+    <circle cx="201" cy="491" r="4" fill="#546275"/>
+  </g>
+  <g stroke="url(#speed)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M349 272h77"/><path d="M335 304h105"/><path d="M349 336h77"/>
+  </g>
+  <path d="m408 260 19 12-19 12m-5 8 19 12-19 12m5 8 19 12-19 12" fill="none" stroke="#62e2c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#shadow)">
+    <rect x="465" y="191" width="280" height="280" rx="24" fill="#172647" stroke="#455d89"/>
+    <text x="493" y="229" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">LIGHTWEIGHT BY DESIGN</text>
+    <rect x="493" y="250" width="222" height="74" rx="14" fill="#202f55"/>
+    <circle cx="520" cy="287" r="17" fill="#2c906f"/><path d="M510 287h20m-10-10v20" stroke="#d7fff0" stroke-width="2"/>
+    <text x="550" y="281" fill="#e8f4ff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Optimized images</text>
+    <text x="550" y="300" fill="#a8bad9" font-family="Arial,sans-serif" font-size="11">Smaller files, same impact</text>
+    <rect x="493" y="337" width="222" height="55" rx="14" fill="#202f55"/>
+    <circle cx="520" cy="364" r="17" fill="#3977ab"/><path d="M520 354v11l8 5" fill="none" stroke="#e0f2ff" stroke-width="2"/>
+    <text x="550" y="360" fill="#e8f4ff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Caching + CDN</text>
+    <text x="550" y="378" fill="#a8bad9" font-family="Arial,sans-serif" font-size="11">Content delivered closer</text>
+    <text x="493" y="428" fill="#8ca7c9" font-family="Arial,sans-serif" font-size="11">3G FRIENDLY  ·  MOBILE FIRST  ·  LESS WAITING</text>
+  </g>
+  <rect x="52" y="530" width="693" height="1" fill="#a2b3db" opacity=".3"/>
+  <text x="52" y="559" fill="#e0e8f7" font-family="Arial,sans-serif" font-size="14">Speed is part of the customer experience.</text>
+  <text x="744" y="559" fill="#83e6d1" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700">02 / 06</text>
+</svg>

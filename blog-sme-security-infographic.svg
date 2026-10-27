@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Cybersecurity for East African SMEs</title>
+  <desc id="description">A small business is protected by a security shield, with three practical safeguards highlighted: unique logins, tested backups, and two-factor authentication.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#171e2b"/><stop offset="1" stop-color="#343447"/></linearGradient>
+    <linearGradient id="shield"><stop stop-color="#f0bd68"/><stop offset="1" stop-color="#e77857"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#080a11" flood-opacity=".55"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="82" cy="520" r="180" fill="#e77e5e" opacity=".07"/>
+  <text x="52" y="68" fill="#f2c27d" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">SMALL BUSINESS SECURITY</text>
+  <text x="52" y="111" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">Secure the foundations</text>
+  <text x="52" y="141" fill="#c5c6ce" font-family="Arial,sans-serif" font-size="16">Three simple habits protect growing teams</text>
+  <g filter="url(#shadow)">
+    <rect x="61" y="191" width="263" height="266" rx="22" fill="#f7f5f0"/>
+    <rect x="61" y="191" width="263" height="47" rx="22" fill="#323546"/>
+    <circle cx="86" cy="215" r="7" fill="#f2bd6d"/><circle cx="106" cy="215" r="7" fill="#df7860"/>
+    <text x="81" y="274" fill="#3c3b46" font-family="Arial,sans-serif" font-size="13" font-weight="700">SME SECURITY CHECKLIST</text>
+    <circle cx="93" cy="311" r="14" fill="#e9f2e9"/><path d="m86 311 5 5 10-11" fill="none" stroke="#5d9a73" stroke-width="2.5"/>
+    <text x="119" y="307" fill="#393c43" font-family="Arial,sans-serif" font-size="12" font-weight="700">Unique accounts</text>
+    <text x="119" y="324" fill="#85858a" font-family="Arial,sans-serif" font-size="10">No shared admin passwords</text>
+    <circle cx="93" cy="363" r="14" fill="#e9f2e9"/><path d="m86 363 5 5 10-11" fill="none" stroke="#5d9a73" stroke-width="2.5"/>
+    <text x="119" y="359" fill="#393c43" font-family="Arial,sans-serif" font-size="12" font-weight="700">Tested backups</text>
+    <text x="119" y="376" fill="#85858a" font-family="Arial,sans-serif" font-size="10">Practice restoring your data</text>
+    <circle cx="93" cy="415" r="14" fill="#e9f2e9"/><path d="m86 415 5 5 10-11" fill="none" stroke="#5d9a73" stroke-width="2.5"/>
+    <text x="119" y="411" fill="#393c43" font-family="Arial,sans-serif" font-size="12" font-weight="700">2-step sign-in</text>
+    <text x="119" y="428" fill="#85858a" font-family="Arial,sans-serif" font-size="10">Enable 2FA wherever possible</text>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M504 193 655 239v106c0 95-59 151-151 193-92-42-151-98-151-193V239Z" fill="url(#shield)" stroke="#ffd798" stroke-width="4"/>
+    <path d="M504 223 624 260v82c0 73-43 119-120 157-77-38-120-84-120-157v-82Z" fill="#232b3b" opacity=".88"/>
+    <rect x="455" y="310" width="98" height="80" rx="15" fill="#e6e2d6"/>
+    <path d="M475 310v-17a29 29 0 0 1 58 0v17" fill="none" stroke="#e6e2d6" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="504" cy="343" r="8" fill="#e57c5a"/><path d="M504 350v17" stroke="#e57c5a" stroke-width="5" stroke-linecap="round"/>
+    <text x="504" y="430" text-anchor="middle" fill="#fff0d6" font-family="Arial,sans-serif" font-size="13" font-weight="700">PROTECT WHAT</text>
+    <text x="504" y="449" text-anchor="middle" fill="#fff0d6" font-family="Arial,sans-serif" font-size="13" font-weight="700">YOU'RE BUILDING</text>
+  </g>
+  <g>
+    <circle cx="698" cy="262" r="25" fill="#3c4353"/><path d="M687 262h22m-11-11v22" stroke="#f0bd68" stroke-width="3"/>
+    <circle cx="698" cy="354" r="25" fill="#3c4353"/><path d="M687 355q11-19 22 0m-19 7h16" fill="none" stroke="#f0bd68" stroke-width="3"/>
+    <circle cx="698" cy="446" r="25" fill="#3c4353"/><path d="M690 446h16m-8-8v16" stroke="#f0bd68" stroke-width="3"/>
+  </g>
+  <rect x="52" y="530" width="693" height="1" fill="#d5d0d4" opacity=".32"/>
+  <text x="52" y="559" fill="#e5e3e5" font-family="Arial,sans-serif" font-size="14">Build security into everyday business habits.</text>
+  <text x="744" y="559" fill="#f2c27d" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700">06 / 06</text>
+</svg>

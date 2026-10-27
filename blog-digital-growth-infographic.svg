@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">90-day digital growth plan</title>
+  <desc id="description">A 90-day timeline shows an audit, content and campaign phase, and optimization, linked to a rising engagement chart and a Kampala retail storefront.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#311b32"/><stop offset="1" stop-color="#703c3c"/></linearGradient>
+    <linearGradient id="chart"><stop stop-color="#ffad72"/><stop offset="1" stop-color="#ffd77a"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="13" stdDeviation="13" flood-color="#180f1e" flood-opacity=".48"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="755" cy="32" r="190" fill="#ffb16d" opacity=".09"/>
+  <path d="M0 472c119-40 237-27 352-62s291-20 448-67v257H0Z" fill="#261726" opacity=".47"/>
+  <text x="52" y="66" fill="#ffc18a" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">MARKETING + GROWTH</text>
+  <text x="52" y="110" fill="#fff" font-family="Arial,sans-serif" font-size="31" font-weight="700">90 days. One growth engine.</text>
+  <text x="52" y="140" fill="#e4c8d1" font-family="Arial,sans-serif" font-size="16">A focused plan for a Kampala retail brand</text>
+  <g filter="url(#shadow)">
+    <rect x="52" y="181" width="443" height="306" rx="24" fill="#fff9f3"/>
+    <text x="79" y="218" fill="#482735" font-family="Arial,sans-serif" font-size="15" font-weight="700">THE 90-DAY PLAYBOOK</text>
+    <path d="M100 271h342" stroke="#dec8c5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100 271h342" stroke="url(#chart)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="111" cy="271" r="13" fill="#e97462"/><circle cx="268" cy="271" r="13" fill="#ed9e60"/><circle cx="430" cy="271" r="13" fill="#e5b752"/>
+    <text x="91" y="306" fill="#713e4b" font-family="Arial,sans-serif" font-size="12" font-weight="700">DAYS 1–14</text>
+    <text x="89" y="329" fill="#392833" font-family="Arial,sans-serif" font-size="15" font-weight="700">Audit</text>
+    <text x="89" y="350" fill="#79656e" font-family="Arial,sans-serif" font-size="11">UX + analytics</text>
+    <text x="247" y="306" fill="#713e4b" font-family="Arial,sans-serif" font-size="12" font-weight="700">DAYS 15–45</text>
+    <text x="247" y="329" fill="#392833" font-family="Arial,sans-serif" font-size="15" font-weight="700">Publish</text>
+    <text x="247" y="350" fill="#79656e" font-family="Arial,sans-serif" font-size="11">Content + campaigns</text>
+    <text x="405" y="306" fill="#713e4b" font-family="Arial,sans-serif" font-size="12" font-weight="700">DAYS 46–90</text>
+    <text x="405" y="329" fill="#392833" font-family="Arial,sans-serif" font-size="15" font-weight="700">Optimize</text>
+    <text x="405" y="350" fill="#79656e" font-family="Arial,sans-serif" font-size="11">Measure + improve</text>
+    <rect x="82" y="382" width="381" height="1" fill="#e8d9d4"/>
+    <text x="86" y="412" fill="#79656e" font-family="Arial,sans-serif" font-size="11" font-weight="700">QUALIFIED TRAFFIC</text>
+    <path d="M90 457 154 448 208 451 271 427 323 435 386 403 449 390" fill="none" stroke="#e4785e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 457 154 448 208 451 271 427 323 435 386 403 449 390v22H90Z" fill="#f3aa73" opacity=".18"/>
+    <circle cx="449" cy="390" r="6" fill="#e4785e"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="535" y="215" width="210" height="233" rx="22" fill="#f5e1c8"/>
+    <path d="M535 294h210v154H535Z" fill="#c27050"/>
+    <path d="m524 296 116-82 116 82H524Z" fill="#df9970"/>
+    <rect x="562" y="317" width="44" height="47" rx="3" fill="#fff2d6"/><path d="M584 317v47m-22-23h44" stroke="#d08e6b" stroke-width="2"/>
+    <rect x="676" y="317" width="44" height="47" rx="3" fill="#fff2d6"/><path d="M698 317v47m-22-23h44" stroke="#d08e6b" stroke-width="2"/>
+    <rect x="615" y="359" width="49" height="89" rx="3" fill="#70423b"/>
+    <circle cx="652" cy="404" r="3" fill="#ffd37d"/>
+    <rect x="574" y="278" width="133" height="22" rx="11" fill="#452a36"/>
+    <text x="640" y="293" text-anchor="middle" fill="#fff0db" font-family="Arial,sans-serif" font-size="10" font-weight="700">LOCAL RETAIL · KAMPALA</text>
+  </g>
+  <rect x="52" y="530" width="693" height="1" fill="#f2d5ce" opacity=".35"/>
+  <text x="52" y="559" fill="#f7e5df" font-family="Arial,sans-serif" font-size="14">Make every campaign measurable. Improve what works.</text>
+  <text x="744" y="559" fill="#ffc18a" text-anchor="end" font-family="Arial,sans-serif" font-size="12" font-weight="700">03 / 06</text>
+</svg>
