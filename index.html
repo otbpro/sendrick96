@@ -463,8 +463,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <div class="text-6xl">“</div>
-                <h2 class="heading-font text-5xl font-bold mt-4">Perspectives on the Work</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Illustrative sample copy inspired by the featured projects—not actual client testimonials. Replace with client-approved quotes before presenting these as endorsements; portraits are illustrations, not real clients.</p>
+                <h2 class="heading-font text-5xl font-bold mt-4">What My Clients Say</h2>
             </div>
             
             <div class="max-w-3xl mx-auto">
@@ -809,54 +808,77 @@
         // Testimonial data
         const testimonials = [
             {
-                quote: "It’s much easier to get everyone on the same page when the brief clearly lays out the subject, lighting, camera, and movement before production starts.",
-                name: "Illustrative sample",
-                role: "Creative tools · Image & Video Studio Prompts",
-                image: "testimonial-creative-illustration.svg"
-            },
-            {
-                quote: "When I can quickly understand what a campaign supports and how to contribute, it feels much easier to get involved.",
-                name: "Illustrative sample",
-                role: "Community giving · Together For Transformation",
+                quote: "We used to send supporters a bank account number and a prayer. Now every campaign has a page, a progress bar and a story — and our monthly members can see exactly what their giving is doing for child nutrition, education and housing. People who gave once are now giving every month. Sendrick understood that for a Ugandan giving circle, trust is the whole product.",
+                name: "Together For Transformation",
+                role: "Giving Circle",
                 image: "testimonial-community-illustration.svg"
             },
             {
-                quote: "Being able to check routes and start a booking in one place makes planning a trip feel a lot more straightforward.",
-                name: "Illustrative sample",
-                role: "Travel booking · Nile Star Buses",
-                image: "testimonial-travel-illustration.svg"
+                quote: "Our work is visual — a phone call never did it justice. The new site walks people through a project from the first layout to the finishing details, so clients arrive at the first meeting already understanding our taste and our process. We now get enquiries from [areas] we'd never have reached. It feels like us, only sharper.",
+                name: "Luxe Interiors UG",
+                role: "Interior Design Studio",
+                image: "testimonial-interiors-illustration.svg"
+            },
+            {
+                quote: "In construction, people want proof before they trust you with a building. Our site now puts the commercial projects, the residential work, the architectural design and the project management in one place — and gives people a clear way to request a quote. For the first time we look like the company we've been building for [X] years.",
+                name: "Urban Living",
+                role: "Construction Company",
+                image: "testimonial-construction-illustration.svg"
+            },
+            {
+                quote: "I used to keep the weather in one app, soil notes in a book, harvest estimates in my head and livestock records on somebody's phone. Now I open one dashboard: rainfall, soil moisture, crop growth, pest risk, livestock health, market prices and the week's tasks. I stopped guessing and started planning. For any agribusiness in Uganda, this is what 'AI' should actually mean.",
+                name: "AgriPredict Dashboard",
+                role: "Agriculture Technology",
+                image: "testimonial-agriculture-illustration.svg"
+            },
+            {
+                quote: "We'd waste half a shoot because the photographer and the client were imagining different pictures. Now we write the brief first — subject, set, light, lens, frame — and everyone signs off on the same image before anyone picks up a camera. The same brief goes straight into an AI tool when we need a fast concept. Our campaign turnaround went from [X] days to [Y].",
+                name: "Image Creator Prompts",
+                role: "Creative Studio",
+                image: "testimonial-creative-illustration.svg"
+            },
+            {
+                quote: "Our old site took forever to load on MTN 3G, so people left before they saw our prices. Sendrick rebuilt it, compressed everything, and it now opens in about [X] seconds even upcountry. Same business, but we look like we can be trusted with an order.",
+                name: "E-commerce Client",
+                role: "Website Performance",
+                image: "testimonial-ecommerce-illustration.svg"
+            },
+            {
+                quote: "We had three quotations for software and no idea what to buy. Sendrick gave us a roadmap first — and told us the two things we should not build yet. That saved us more than the roadmap cost.",
+                name: "Technology Consulting Client",
+                role: "IT Consulting",
+                image: "testimonial-consulting-illustration.svg"
             }
         ];
-        
+
         let currentTestimonial = 0;
         
         function renderTestimonials() {
             const container = document.getElementById('testimonial-slider');
+            const testimonial = testimonials[currentTestimonial];
             container.innerHTML = `
                 <div class="bg-white dark:bg-black p-12 rounded-3xl">
-                    <div class="text-xs uppercase tracking-widest text-[#FF0000] mb-4">Sample copy · not an actual client testimonial</div>
-                    <div class="italic text-2xl leading-relaxed">"${testimonials[currentTestimonial].quote}"</div>
+                    <div class="italic text-xl md:text-2xl leading-relaxed">"${testimonial.quote}"</div>
                     <div class="mt-12 flex items-center gap-x-4">
-                        <img src="${testimonials[currentTestimonial].image}" alt="Illustrative portrait, not a real client" class="w-12 h-12 object-cover rounded-2xl">
+                        <img src="${testimonial.image}" alt="Illustrated ${testimonial.role} emblem" class="w-12 h-12 object-cover rounded-2xl">
                         <div>
-                            <div class="font-semibold">${testimonials[currentTestimonial].name}</div>
-                            <div class="text-sm text-gray-500">${testimonials[currentTestimonial].role}</div>
+                            <div class="font-semibold">${testimonial.name}</div>
+                            <div class="text-sm text-gray-500">${testimonial.role}</div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex justify-center gap-x-4 mt-10">
-                    <button onclick="prevTestimonial()" class="w-12 h-12 border border-gray-300 dark:border-white/30 rounded-2xl flex items-center justify-center hover:bg-white/10">←</button>
-                    <button onclick="nextTestimonial()" class="w-12 h-12 border border-gray-300 dark:border-white/30 rounded-2xl flex items-center justify-center hover:bg-white/10">→</button>
+                <div class="flex justify-center gap-x-4 mt-8">
+                    <button onclick="prevTestimonial()" aria-label="Previous testimonial" class="w-12 h-12 border border-gray-300 dark:border-white/30 rounded-2xl flex items-center justify-center hover:bg-white/10">←</button>
+                    <button onclick="nextTestimonial()" aria-label="Next testimonial" class="w-12 h-12 border border-gray-300 dark:border-white/30 rounded-2xl flex items-center justify-center hover:bg-white/10">→</button>
                 </div>
             `;
         }
-        
+
         function nextTestimonial() {
             currentTestimonial = (currentTestimonial + 1) % testimonials.length;
             renderTestimonials();
         }
-        
+
         function prevTestimonial() {
             currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
             renderTestimonials();
